@@ -5,33 +5,51 @@
     align-items: center;
 
     width: 100%;
-    height: 411px;
-    background-color: #fff;
+    /* height: 411px; */
+    background-color: #f3f3f8;
     display: flex;
     align-self: flex-end;
     position: relative;
 }
 
 .image_login {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+}
+
+.login_image_wrapper {
+    margin: 20px 0;
 }
 
 .login_wrapper {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     width: 60%;
-    height: 90%;
+    height: 100%;
+}
+
+.login_wrapper > h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #484456;
+}
+.login_wrapper > p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #484456;
 }
 
 .socials_auth_wrapper {
     display: flex;
     flex-direction: row;
-    width: 70%;
-    justify-content: space-around;
+    /* width: 70%; */
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
 }
 
 .login_image {
@@ -39,4 +57,13 @@
     height: 100px;
     border-radius: 100px;
     background-color: antiquewhite;
+}
+
+.social_auth > img {
+    border: 2px solid #ccc;
+    
+}
+
+.social_image {
+    width: 130px;
 }

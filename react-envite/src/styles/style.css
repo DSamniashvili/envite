@@ -2,11 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+html {
+    font-size: 16px;
+  }
+
 body {
     background-color: #ccc;
     /* width: 417px;
     height: 898px; */
+    background: url('/images/background1.jpg');
+    /* background-color: purple; */
+    background-size: cover;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -33,7 +42,10 @@ button, input[type="submit"], input[type="reset"] {
   width: 100%;
   margin-bottom: 5%;
   margin-right: 5%;
-  color: #fff;
+}
+
+.btn_wrapper p {
+    color: #fff;
 }
 
 .e_btn {
@@ -55,14 +67,6 @@ button, input[type="submit"], input[type="reset"] {
     background-color: #a5a4bb;
 }
 .onlyStick {
-    /* position: absolute;
-    bottom: 0;
-    background-color: #f5f5f5;
-    width: 60px;
-    height: 6px;
-    border-radius: 6px;
-    margin: 0 auto;
-    background-color: #a5a4bb; */
     width: 60px;
     height: 6px;
     border-radius: 6px;
