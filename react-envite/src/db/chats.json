@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Asos Team",
+        "members" : [{
+            "username": "Nina"
+        }, {
+            "username": "Ema"
+        },
+        {
+            "username": "Mila"
+        },
+        {
+            "username": "Mila"
+        }]
+    },
+    {
+        "id": "2",
+        "name": "Teamshop",
+        "members" : [{
+            "userID": 1
+        }]
+    },
+    {
+        "id": "3",
+        "name": "Nina Group"
+    },
+    {
+        "id": "3",
+        "name": "It's all about the bag"
+    }
+]
