@@ -1,0 +1,21 @@
+.menubar_header_wrapper {
+    width: 100%;
+    height: 64px;
+    background-color: purple;
+    background-image: linear-gradient(to right, #5e68d5 , #c790df);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.menubar_header_wrapper * {
+
+    color: #fff;
+}

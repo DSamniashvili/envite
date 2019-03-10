@@ -8,14 +8,11 @@ export default class ChatsWrapper extends Component {
     return (
       <div className="profile_chats_wrapper">
         <div className="profile_chats_container">
-          {/* <div className="profile_chat_heading">
-              <p>shopica chats</p>
-          </div> */}
-           <div className="chat_items_wrapper">
-                <ChatItem />
-                <ChatItem />
-                <ChatItem />
-           </div>
+          <div className="chat_items_wrapper">
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+          </div>
         </div>
       </div>
     )

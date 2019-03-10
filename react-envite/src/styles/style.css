@@ -13,8 +13,9 @@ body {
     background-color: #ccc;
     /* width: 417px;
     height: 898px; */
-    background: url('/images/background1.jpg');
-    /* background-color: purple; */
+    /* background: url('/images/background1.jpg'); */
+    background-color: purple;
+    background-image: linear-gradient(darkgray, lightgray);
     background-size: cover;
 }
 
