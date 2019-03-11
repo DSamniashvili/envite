@@ -4,7 +4,7 @@ const Plus = props => {
     console.log(props)
     return (
         <div
-            className="plus_icon"
+            className={props.classname}
             onClick={props.newJourney}
         >
             <span>{props.icon}</span>

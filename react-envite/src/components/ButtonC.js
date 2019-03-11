@@ -3,11 +3,13 @@ import React from 'react';
 const ButtonC = (props) => {
     return (
     <div className="btn_wrapper">
-    <p>Shop with friends</p>
+    <p><strong>Shop with friends</strong></p>
         <button 
-        className="btn e_btn"
+        className="btn"
+        // e_btn
         onClick={props.onBtnPress}
-        > e
+        > 
+            <img src={'/images/envite_logo.png'} alt="envite_logo" className="image_login"/>
         </button>
     </div>
     )

@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-const ChatItem = () => {
-  return (
-    <div className="profile_chat_item">
-        <div className="profile_chat_item_left">
-          <div className="profile_chat_item_left_fletter">A</div>
-        </div>
-        <div className="profile_chat_item_right">
-            <h3>Asos Team</h3>
-            <p>Nina, Emma, Milla, Emily</p>
-        </div>
-    </div>
-  )
+class ChatItem extends Component {
+  firstLetter = (name) => {
+    return name.charAt(0).toLowerCase();    
+  }
+
+  firstword = (name) => {
+    var stringArray = name.split(" ");
+    return stringArray[0].toLowerCase();
+  }
+
+  render() {
+    console.log(this.props)
+    return (
+      <div 
+        className="profile_chat_item"
+        onClick={this.props.openChat}
+        >
+          <div className="profile_chat_item_left">
+            <div className={`profile_chat_item_left_fletter item_left_${this.firstword(this.props.chat.name)}`}>{this.firstLetter(this.props.chat.name)}</div>
+          </div>
+          <div className="profile_chat_item_right">
+              <h3>{this.props.chat.name}</h3>
+              <p>{this.props.chat.members}</p>
+          </div>
+      </div>
+    )
+  }
 }
 
 export default ChatItem;

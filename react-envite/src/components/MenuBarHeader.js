@@ -6,7 +6,7 @@ export default class MenuBarHeader extends Component {
         return (
             <div className="menubar_header_wrapper">
                 <div className="menubar_three_lines"><i className="fas fa-list"></i></div>
-                <div className="menubar_heading">New Group</div>
+                <div className="menubar_heading">{this.props.centerheading}</div>
                 <div className="menubar_settingsd"><i className="fas fa-cog"></i></div>
             </div>
         )

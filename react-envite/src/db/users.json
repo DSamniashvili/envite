@@ -1,39 +1,5 @@
 [{
     "id": "1",
-    "name": "Emma",
-    "lastname": "Green",
-    "username": "Dea",
-    "email": "admin@admin.ge",
-    "birthdate": "2018-12-11",
-    "chat_name": [{
-        "id": 99999,
-        "name": "Asos Team"
-    }, {
-        "id": 99999,
-        "name": "Asos Team"
-    }, {
-        "id": 99999,
-        "name": "Asos Team"
-    }],
-    "shopping_bag": [{
-        "id": "1",
-        "url": "images/bag.jpg",
-        "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
-    }, {
-        "id": "4",
-        "url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "name": "Bed",
-        "category": "4",
-        "desc": "Comfortable low bed",
-        "price": "2700",
-        "color": "3",
-        "material": "1",
-        "quantity": "11"
-    }]
-}, {
-    "id": "2",
     "name": "Nina",
     "lastname": "Lorens",
     "username": "Nina",
@@ -51,8 +17,44 @@
         "name": "Very Cool yellow bag for woman",
         "price": "$49.00",
         "discount": "$19.90"
-    }
-]
+    }],
+    "chats": [{
+        "name": "Asos Team",
+        "members": "Nina, Emma, Milla, Eimy"
+    },{
+        "name": "Teamshop",
+        "members": "Nina, Emma, Milla, Eimy"
+    },{
+        "name": "Nina Group",
+        "members": "Nina, Emma, Milla, Eimy"
+    }]
+}, {
+    "id": "2",
+    "name": "Emma",
+    "lastname": "Green",
+    "username": "Dea",
+    "email": "admin@admin.ge",
+    "birthdate": "2018-12-11",
+    "shopping_bag": [{
+        "itemID": "1",
+        "url": "images/bag.jpg",
+        "name": "Very Cool yellow bag for woman",
+        "price": "$49.00",
+        "discount": "$19.90"
+    }, {
+        "itemID": "1",
+        "url": "images/bag.jpg",
+        "name": "Very Cool yellow bag for woman",
+        "price": "$49.00",
+        "discount": "$19.90"
+    }, {
+        "itemID": "1",
+        "url": "images/bag.jpg",
+        "name": "Very Cool yellow bag for woman",
+        "price": "$49.00",
+        "discount": "$19.90"
+    }],
+    "chatName": "It's all  about the bag"
 }, {
     "id": "3",
     "name": "Lora",
@@ -72,61 +74,5 @@
         "name": "Very Cool yellow bag for woman",
         "price": "$49.00",
         "discount": "$19.90"
-    }
-]
-}, {
-    "id": "4",
-    "name": "Dea",
-    "lastname": "Samniashvili",
-    "username": "dea",
-    "password": "11687ee61aefb306f6a888de45c56a79c6a1be5723fafb37907dc6963e993a83",
-    "email": "dea@dea.ge",
-    "birthdate": "2018-12-27",
-    "balance": "3000",
-    "cart": [],
-    "orders": [],
-    "level": "1"
-}, {
-    "id": "5",
-    "name": "salo",
-    "lastname": "salome",
-    "username": "salome",
-    "password": "81b8275eb21f214caac537568dc68b56f6debec15f22e08bae000d469f1978b4",
-    "email": "salome@rs.ge",
-    "birthdate": "1989-12-10",
-    "balance": 3175,
-    "cart": [{
-        "id": "3",
-        "url": "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "name": "Bed",
-        "category": "4",
-        "desc": "Comfortable low bed",
-        "price": "2700",
-        "color": "3",
-        "material": "1",
-        "quantity": 3
-    }],
-    "orders": [{
-        "id": "5",
-        "url": "https://images.pexels.com/photos/237393/pexels-photo-237393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "name": "Bed",
-        "category": "4",
-        "desc": "Comfortable low bed for evryon",
-        "price": "2700",
-        "color": "3",
-        "material": "1",
-        "quantity": "1"
-    }, {
-        "id": "6",
-        "url": "https://images.pexels.com/photos/271655/pexels-photo-271655.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "name": "Bed",
-        "category": "4",
-        "desc": "Comfortable low bed",
-        "price": "2700",
-        "color": "3",
-        "material": "1",
-        "quantity": 2
-    }],
-    "level": "1",
-    "address": "Saburtalo 6"
+    }]
 }]

@@ -7,7 +7,7 @@ import '../styles/new_group.css';
 const NewGroupPage = () => {
     return (
         <div className="new_group_wrapper">
-            <MenuBarHeader />
+            <MenuBarHeader centerheading={"New Group"} />
             <div className="new_group_wrapper_content">
                 <h1>eNvite Your friends</h1>
                 <p>Where is the best way to call your friends in?</p>

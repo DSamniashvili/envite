@@ -9,8 +9,8 @@
     color: #4c495a;
     background-color: #f5f4fa;
 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .new_group_wrapper_content {
@@ -54,9 +54,10 @@
 }
 .fa-whatsapp {
     color: green;
+    font-size: 1.6rem;
 }
 .fa-telegram-plane {
-    color: blue;
+    color: #2e9fcf;
 }
 .fa-envelope {
     color: aqua;

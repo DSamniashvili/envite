@@ -14,11 +14,11 @@
 
 .profile_chat_item {
     width: 375px;
-    height: 68px;
+    height: 75px;
     border: 2px solid #e6e3f1;
     border-radius: 5px;
     background-color: #f5f4fa;
-    margin: 10px 0;
+    margin: 12px 0;
     width: 100%;
 }
 
@@ -32,7 +32,12 @@
 }
 
 .profile_chat_heading {
-    margin: 20px 0;
+    margin-bottom: 20px;
+    margin-top: 25px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    color: #454253;
 }
 .profile_chat_heading > h3 {
     font-size: 0.9rem;
@@ -63,9 +68,11 @@
     width: 45px;
     height: 45px;
     text-align: center;
-    background-color: aqua;
     line-height: 45px;
     border-radius: 45px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .profile_chat_item_right > h3 {
@@ -77,4 +84,14 @@
 .chat_items_wrapper {
     z-index: 2;
     width: 100%;
+}
+
+.item_left_asos {
+    background-image: linear-gradient(#f66a78, #fdc691);
+}
+.item_left_teamshop {
+    background-image: linear-gradient(#d3de7a, #33b8ae);
+}
+.item_left_nina {
+    background-image: linear-gradient(#8c81dc, #4f7de0);
 }
