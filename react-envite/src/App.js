@@ -20,7 +20,13 @@ renderContent() {
   if(!this.state.isHidden){
     return <Login toggleModule={this.toggleModule}/>
     }
-   return <ButtonC onBtnPress = {this.toggleModule}/>
+   return <ButtonC
+    // chatsQuantity={"chats_quantity"} 
+    chatsQuantity={""} 
+    // span={'9'}
+    span={''}
+    heading={"Shop with friends"}
+    onBtnPress = {this.toggleModule}/>
 }
 
   render() {

@@ -3,8 +3,9 @@
     "name": "Nina",
     "lastname": "Lorens",
     "username": "Nina",
-    "email": "Nina@nina.ge",
+    "email": "nina@gmail.com",
     "birthdate": "1994-12-10",
+    "img": "images/nina.png",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",
@@ -20,6 +21,20 @@
     }],
     "chats": [{
         "name": "Asos Team",
+        "content": [{
+            "id": "3",
+            "name": "Lora",
+            "lastname": "Line",
+            "textContent": "joined to Asos Team",
+            "img": "images/girl.jpg"
+        }, {
+            "id": "1",
+            "name": "Nina",
+            "lastname": "Lorens",   
+            "textContent": "Hi dear, good you came!!!",
+            "img": "images/nina.png"
+        }
+    ],
         "members": "Nina, Emma, Milla, Eimy"
     },{
         "name": "Teamshop",
@@ -35,6 +50,7 @@
     "username": "Dea",
     "email": "admin@admin.ge",
     "birthdate": "2018-12-11",
+    "img": "images/nina.png",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",
@@ -62,6 +78,7 @@
     "username": "Lora",
     "email": "Lora@lora.ge",
     "birthdate": "1994-12-10",
+    "img": "images/nina.png",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",

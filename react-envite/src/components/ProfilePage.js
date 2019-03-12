@@ -9,6 +9,7 @@ import BottomNavigation from './BottomNavigation';
 import NewGroupPage from './NewGroupPage';
 import PerChatContent from './PerChatContent';
 import PersonDetails from './PersonDetails';
+import ButtonC from './ButtonC';
 
 
 import { connect } from 'react-redux';
@@ -18,7 +19,10 @@ class ProfilePage extends Component {
     isAddingNewChat: false,
     isOpenPerChat: false,
     isPersonDetailsSelected: false,
+    usersList: this.props.users,
     personSelected: this.props.users[0],
+    profilePageRendered: false,
+    messages: this.props.users[0].chats[0].content,
   }
 
 
@@ -40,19 +44,37 @@ class ProfilePage extends Component {
       isPersonDetailsSelected: true,
     })
   }
-
+  showBtnWithMsgQuantity = () => {
+    console.log('clicked - button with message quantity shown');
+    this.setState({
+      profilePageRendered: !this.state.profilePageRendered,
+      isPersonDetailsSelected: !this.state.isPersonDetailsSelected
+    })
+    console.log(this.state)
+  }
 
   renderView() {
+    console.log(this.state.messages);
     let person = this.state.personSelected;
 
     if (this.state.isAddingNewChat) {
       return <NewGroupPage />
     }
     if (this.state.isOpenPerChat) {
-      return <PerChatContent />
+      return <PerChatContent 
+        messages={this.state.messages}
+        currentUser={this.state.personSelected}
+        usersList={this.state.usersList}
+        />
     }
     if (this.state.isPersonDetailsSelected) {
-      return <PersonDetails person={person} />
+      return <PersonDetails 
+      person={person}
+      showBtnWithMsgQuantity={this.showBtnWithMsgQuantity}
+      />
+    }
+    if (this.state.profilePageRendered) {
+      return <ButtonC/>
     }
 
     return (
@@ -77,6 +99,7 @@ class ProfilePage extends Component {
         <BottomNavigation 
         wrapperClass={"profile_bottom_nav"}
         shapeProfile={""}
+        profile={"profile_bottom_navigation_profile"}
         newJourney={this.newJourney}
         openPersonDetails={this.openPersonDetails} 
         classname={"plus_icon"}
@@ -88,7 +111,7 @@ class ProfilePage extends Component {
 
 
   render() {
-    console.log(this.props.users);
+    // console.log(this.props.users);
     return (
       this.renderView()
     )

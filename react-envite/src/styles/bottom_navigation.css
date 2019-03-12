@@ -1,28 +1,33 @@
 .profile_bottom_navigation {
     display: flex;
     flex-direction: column;
-    /* background-color: purple;
-    background-image: linear-gradient(to right, #5e68d5 , #c790df); */
-    /* box-shadow: 0 -10px 10px -10px #333; */
     
-    height: 78px;
-    /* height: 11%; */
     width: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
+    height: 75px;
+}
+
+.profile_bottom_navigation_profile {
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom, #fdfcfe, #cfcfcf);    
+    height: 90px;
+}
+
+.profile_bottom_navigation_image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .profile_bottom_navigation_wrapper {
     display: flex;
     flex-direction: row;
 
+    position: absolute;
     width: 100%;
-    height: 100%;
-}
-
-.profile_bottom_nav {
-    box-shadow: 0px -4px 3px #ccc;
+    height: 100%;    
 }
 
 .bottom_icon {
@@ -113,22 +118,24 @@
     height: 55px;
     background-color: purple;
     background-image: linear-gradient(to right, #5e68d5 , #c790df);
-    box-shadow: 0px -4px 25px #dfdee0;
+    box-shadow: 0px 20px 60px #a6a2de;
     border-radius: 50px;
     position: absolute;
     z-index: 5;
-    top: -35px;
+    top: -20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
 .plus_icon > span {
+    margin-top: -6px;
     color: #fff;
     font-size: 2rem;
-    margin-top: -7px;
 }
+
 .white {
     width: 55px;
     height: 80px;

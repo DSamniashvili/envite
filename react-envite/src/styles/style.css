@@ -43,6 +43,8 @@ button, input[type="submit"], input[type="reset"] {
   width: 100%;
   margin-bottom: 5%;
   margin-right: 5%;
+
+  position: relative;
 }
 
 .btn_wrapper p {
@@ -55,6 +57,25 @@ button, input[type="submit"], input[type="reset"] {
     border-radius: 50px;
     background-color: blueviolet;
     margin-left: 10px;
+}
+
+.chats_quantity {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e75064;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chats_quantity > span {
+    color: #fff;
+    font-weight: bold;
 }
 
 .stickAndContent {

@@ -7,9 +7,8 @@ import '../styles/bottom_navigation.css';
 export default class BottomNavigation extends Component {
   render() {
     return (
-      <div className="profile_bottom_navigation">
-        {/* <div className="white"></div> */}
-        <div className={`shape ${this.props.shapeProfile}`}></div>
+      <div className={`profile_bottom_navigation ${this.props.profile}`}>
+        <img src={'/images/bottom_navigation.png'} alt="bottom_navogaton_img" className="profile_bottom_navigation_image" />
         <Plus
           newJourney={this.props.newJourney}
           icon={this.props.icon}
@@ -27,3 +26,5 @@ export default class BottomNavigation extends Component {
     )
   }
 }
+
+//profile_bottom_navigation_profile

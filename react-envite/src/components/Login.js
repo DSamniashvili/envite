@@ -21,10 +21,10 @@ export default class Login extends Component {
         }
         return (
             <div className="login_container">
-                <UpperStick toggleModule={this.props.toggleModule} class={'stickAndContent'} />
+                <UpperStick toggleModule={this.props.toggleModule} className={'stickAndContent'} />
             <div className="login_wrapper">
                 <div className="login_image_wrapper">
-                    <img src={'/images/envite_logo.png'} alt="envite_logo" className="image_login"/>
+                    <img src={'/images/envite_logo.png'} alt="envite_logo" className="image_login e_btn_login"/>
                 </div>        
                 <h1>Hello.</h1>
                 <p>Note that the development build is not optimized.

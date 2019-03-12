@@ -12,7 +12,7 @@ class ChatItem extends Component {
   }
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div 
         className="profile_chat_item"
