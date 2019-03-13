@@ -19,3 +19,8 @@
 
     color: #fff;
 }
+
+.menubar_heading > h3 {
+    font-family: 'gilroy-medium';
+    font-size: 11pt;
+}

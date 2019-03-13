@@ -1,15 +1,12 @@
 import React from 'react'
 
-const Plus = props => {
-    // console.log(props)
-    return (
+const Plus = props => (
         <div
             className={props.classname}
             onClick={props.newJourney}
         >
-         <span>{props.icon}</span>   
+         <span><img src ={props.icon} alt="main icon"/></span>   
         </div>
     )
-}
 
 export default Plus;

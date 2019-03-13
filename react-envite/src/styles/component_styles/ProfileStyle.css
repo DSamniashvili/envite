@@ -33,7 +33,7 @@
     border: 10px solid #f5f4fa;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #edecf3;
 
 }
 
@@ -43,6 +43,12 @@
     align-items: center;
     width: 100px;
     height: 70px;
+}
+
+.profile_chat_heading > h3 {
+    font-family: 'gilroy-bold';
+    font-size: 11pt;
+    color: #4f4c5d;
 }
 
 .image_profile {
@@ -68,7 +74,7 @@
 
 .profile_heading_text {
     display: flex;
-    width: 70%;
+    width: 85%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,32 +84,35 @@
 }
 .profile_heading_text > * {
     text-align: center;
-    margin: 2px 0;
+    color: #514e5f;
+    margin: 4px 0;
     z-index: 1;
 }
 
 .profile_heading_text > h1 {
-    margin: 0;
-    font-size: 1.25rem;
+    margin: 20px 0 2px 0;
+    font-family: 'gilroy-bold';
+    font-size: 15pt;
 }
 .profile_heading_text > p {
+    line-height: 20px;
     margin: 0;
-    font-size: 1rem;
+    font-size: 11pt;
     width: 80%;
 }
 .new_shopping_journey {
-    height: 75px;
+    height: 70px;
     z-index: 3;
     width: 120px;
     margin-top: 15px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     /* background-image: linear-gradient(to bottom, #fdfcfe , #f1f0f2); */
 
 }
 .new_shopping_journey > p {
     color: #8f8f8f;
     text-align: center;
-    font-size: 0.92rem;
+    font-size: 10.5pt;
 }
 
 .profile_content_background {
@@ -115,4 +124,11 @@
     background-color: #fdfcfe;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.profile_chat_item_right > h3 {
+    font-family: 'gilroy-bold';
+    font-size: 12.5pt;
+    color: #4f4c5d;
+    margin: 1px 0;
 }

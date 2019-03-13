@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UpperStick from './UpperStick';
 import ProfilePage from './ProfilePage';
 
-import '../styles/loginStyle.css';
+import '../styles/component_styles/loginStyle.css';
 
 export default class Login extends Component {
     state= {
@@ -27,7 +27,7 @@ export default class Login extends Component {
                     <img src={'/images/envite_logo.png'} alt="envite_logo" className="image_login e_btn_login"/>
                 </div>        
                 <h1>Hello.</h1>
-                <p>Note that the development build is not optimized.
+                <p className="login_description">Note that the development build is not optimized.
                 </p>
                 <div className="socials_auth_wrapper">
                     <div className="social_auth">
@@ -41,7 +41,7 @@ export default class Login extends Component {
                         </button>
                     </div>
                 </div>
-                 <p>powered by eNvite</p>
+                 <p className="powered_by">Powered by <span>eNvite</span></p>
             </div>
             </div>
         )

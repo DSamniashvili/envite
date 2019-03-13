@@ -1,5 +1,7 @@
 import React from 'react';
-import '../styles/write_message.css';
+import '../styles/component_styles/write_message.css';
+
+import arrow from '../assets/pathCopy.png';
 
 const WriteMessage = () => {
     return (
@@ -7,7 +9,7 @@ const WriteMessage = () => {
             <textarea className="message_area">
 
             </textarea>
-            <div className="send_button_area"><i className="fas fa-caret-right"></i></div>
+            <div className="send_button_area"><img src={arrow} alt="arrow" /></div>
         </div>
     )
 }

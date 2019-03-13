@@ -1,30 +1,32 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import Plus from './Plus';
+import '../styles/component_styles/bottom_navigation.css';
 
-import '../styles/bottom_navigation.css';
+import user from '../assets/nounUser11228000000001.png';
+import star from '../assets/nounStar2097830000000.png';
+import clock from '../assets/nounHistory576599000000.png';
+import setting from '../assets/nounSettings1187813000000.png';
 
-export default class BottomNavigation extends Component {
-  render() {
+ const BottomNavigation = props => {
+
     return (
-      <div className={`profile_bottom_navigation ${this.props.profile}`}>
+      <div className={`profile_bottom_navigation ${props.profile}`}>
         <img src={'/images/bottom_navigation.png'} alt="bottom_navogaton_img" className="profile_bottom_navigation_image" />
         <Plus
-          newJourney={this.props.newJourney}
-          icon={this.props.icon}
-          classname={this.props.classname}
+          newJourney={props.newJourney}
+          icon={props.icon}
+          classname={props.classname}
         />
-        < ul className={`profile_bottom_navigation_wrapper ${this.props.wrapperClass}`}>
-          <li className="bottom_icon" onClick={this.props.openPersonDetails}><i className="far fa-user"></i></li>
-          <li className="bottom_icon"><i className="far fa-star"></i></li>
+        < ul className={`profile_bottom_navigation_wrapper ${props.wrapperClass}`}>
+          <li className="bottom_icon" onClick={props.openPersonDetails} ><img src={user} alt="User" /></li>
+          <li className="bottom_icon"><img src={star} alt="star" /></li>
           <li className="bottom_icon"></li>
-          <li className="bottom_icon"><i className="far fa-clock"></i></li>
-          <li className="bottom_icon"><i className="fas fa-cog"></i></li>
+          <li className="bottom_icon"><img src={clock} alt="clock" /></li>
+          <li className="bottom_icon"><img src={setting} alt="setting" /></li>
         </ul>
       </div>
 
     )
-  }
 }
+export default BottomNavigation;
 
-//profile_bottom_navigation_profile

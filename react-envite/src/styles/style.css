@@ -1,3 +1,14 @@
+@import url("component_styles/bottom_navigation.css");
+@import url("component_styles/chats_in_profile.css");
+@import url("component_styles/loginStyle.css");
+/* @import url("component_styles/MenuBar.css"); */
+@import url("component_styles/new_group.css");
+@import url("component_styles/per_chat_content.css");
+@import url("component_styles/person_details.css");
+@import url("component_styles/ProfileStyle.css");
+@import url("component_styles/write_message.css");
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +16,33 @@
     
 }
 
+
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('../assets/Fonts/gilroy-bold.otf');
+ }
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../assets/Fonts/gilroy-medium.otf');
+ }
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('../assets/Fonts/gilroy-regular.otf');
+ }
+
+
+
 html {
-    font-size: 16px;
-  }
+    font-size: 12pt;
+}
 
 body {
     background-color: #ccc;
-    /* width: 417px;
-    height: 898px; */
-    /* background: url('/images/background1.jpg'); */
     background-color: purple;
     background-image: linear-gradient(darkgray, lightgray);
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -57,6 +83,18 @@ button, input[type="submit"], input[type="reset"] {
     border-radius: 50px;
     background-color: blueviolet;
     margin-left: 10px;
+}
+
+.btn {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_e {
+    position: absolute;
 }
 
 .chats_quantity {

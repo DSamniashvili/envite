@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import '../styles/ProfileStyle.css';
+// import '../styles/component_styles/ProfileStyle.css';
 
 
 import UpperStick from './UpperStick';
 import ProfilePageHeading from './ProfilePageHeading';
-import ChatsWrapper from './ChatsWrapper';
+import ChatsWrapper from './chats/ChatsWrapper';
 import BottomNavigation from './BottomNavigation';
 import NewGroupPage from './NewGroupPage';
 import PerChatContent from './PerChatContent';
 import PersonDetails from './PersonDetails';
 import ButtonC from './ButtonC';
+// import PerChatContentDetails from './PerChatContentDetails';
+
+import plus from '../assets/group2Copy.png';
 
 
 import { connect } from 'react-redux';
@@ -23,6 +26,7 @@ class ProfilePage extends Component {
     personSelected: this.props.users[0],
     profilePageRendered: false,
     messages: this.props.users[0].chats[0].content,
+    groupDetailsOpen: false,
   }
 
 
@@ -53,6 +57,17 @@ class ProfilePage extends Component {
     console.log(this.state)
   }
 
+  // openGroupDetails = () => {
+  //   console.log('clicked - Group details got opened');
+  //   this.setState({
+  //     groupDetailsOpen: true,
+  //     isOpenPerChat: false,
+  //   })
+  // }
+
+
+
+
   renderView() {
     console.log(this.state.messages);
     let person = this.state.personSelected;
@@ -65,6 +80,7 @@ class ProfilePage extends Component {
         messages={this.state.messages}
         currentUser={this.state.personSelected}
         usersList={this.state.usersList}
+        openGroupDetails={this.openGroupDetails}
         />
     }
     if (this.state.isPersonDetailsSelected) {
@@ -76,22 +92,28 @@ class ProfilePage extends Component {
     if (this.state.profilePageRendered) {
       return <ButtonC/>
     }
+    // if (this.state.groupDetailsOpen) {
+    //   return <PerChatContentDetails />
+    // }
 
     return (
       <div className="Profile_full_container">
-        <UpperStick toggleModule={this.props.toggleModule} class={'stickAndContent_profile'} />
+        <UpperStick toggleModule={this.props.toggleModule} className={'stickAndContent_profile'} />
           <div className="profile_content_background">
               <ProfilePageHeading
               heading={`Welcome ${person.name}.`}
-              contentText={"You're almost ready to start your shopping date."}
+              contentText={"you're almost ready to start your shopping date."}
             />
             <div className="profile_chat_heading">
-              <h3>shopica chats</h3>
+              <h3>Shopica Chats</h3>
             </div>
             <ChatsWrapper
              openChat={this.openChat}
              chats={person.chats}
              />
+             {/* <div className="arrow"> */}
+               {/* <img src="../assets/fIll104.png" alt="arrow" /> */}
+             {/* </div> */}
             <div className="new_shopping_journey">
               <p>New shopping Journey!</p>
         </div>
@@ -103,7 +125,7 @@ class ProfilePage extends Component {
         newJourney={this.newJourney}
         openPersonDetails={this.openPersonDetails} 
         classname={"plus_icon"}
-        icon={'+'}
+        icon={plus}
          />
       </div>
     )

@@ -7,8 +7,8 @@
     width: 90%;
     /* max-height: 433px;
     height: 64%; */
-    max-height: 355px;
-    height: 52.6%;
+    /* max-height: 355px;
+    height: 52.6%; */
     margin: 0 auto;
 }
 
@@ -32,8 +32,8 @@
 }
 
 .profile_chat_heading {
-    margin-bottom: 20px;
-    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
 
     font-size: 1rem;
     font-weight: bold;
@@ -71,15 +71,18 @@
     line-height: 45px;
     border-radius: 45px;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+    /* font-size: 1.5rem;
+    font-weight: bold; */
+
+    font-family: 'gilroy-bold';
+    font-size: 20pt;
 }
 
 .profile_chat_item_right > h3 {
     font-size: 12pt;
 }
 .profile_chat_item_right > p {
-    font-size: 10pt;
+    font-size: 10.5pt;
 }
 .chat_items_wrapper {
     z-index: 2;

@@ -19,8 +19,22 @@
     justify-content: center;
     align-items: center;
 
-    min-height: 280px;
+    /* min-height: 280px; */
     text-align: center;
+
+    width: 75%;
+    margin: 15% 0;
+}
+
+.new_group_wrapper_content > h1 {
+    font-family: 'gilroy-bold';
+    margin: 2% 0;
+    font-size: 15pt;
+}
+.new_group_wrapper_content > p {
+    padding: 0 10px;
+    color: #706e7e;
+    line-height: 24px;
 }
 .socials_media_wrapper {
     display: flex;
@@ -46,19 +60,22 @@
 }
 
 .social_media > i {
-   font-size: 1.4rem;
+   /* font-size: 1.6rem; */
 }
 
 .fa-facebook-f {
-    color: blue;
+    color: #435faa;
+    font-size: 1.4rem;
 }
 .fa-whatsapp {
-    color: green;
-    font-size: 1.6rem;
+    color: #79ce6d;
+    font-size: 1.7rem;
 }
 .fa-telegram-plane {
-    color: #2e9fcf;
+    color: #32a4d5;
+    font-size: 1.4rem;
 }
 .fa-envelope {
-    color: aqua;
+    color: #58e2c2;
+    font-size: 1.3rem;
 }

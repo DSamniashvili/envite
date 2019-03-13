@@ -20,11 +20,11 @@
 }
 
 .send_button_area {
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     background-color: purple;
     background-image: linear-gradient(to right, #5e68d5 , #c790df);
-    border-radius: 30px;
+    border-radius: 33px;
 
     display: flex;
     justify-content: center;

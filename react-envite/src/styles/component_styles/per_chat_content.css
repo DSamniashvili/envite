@@ -1,0 +1,239 @@
+.per_chat_content_wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+}
+.messages_container {
+    width: 100%;
+    background-color: #f5f4fa;
+}
+.message_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-bottom: 30%;
+    
+}
+
+.message_person_name_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    padding: 0 10px;
+}
+
+.message_person_name_content > h5 {
+    font-size: 0.9rem;
+    color: #3c96f7;
+    font-weight: bold;
+}
+.message_person_name_content > p {
+    font-size: 11pt;
+}
+
+.message_guest {
+    background-color: #fefefe;
+    width: 200px;
+    height: 56px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+.message_user {
+    background-color: #8f87ea;
+    width: 250px;
+    height: 56px;
+}
+
+.message_user > .message_person_name_content {
+    color: #fff;
+}
+
+.message_msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.message_person_image {
+    width: 38px;
+    height: 38px;
+}
+
+.chat_image {
+   width: 100%;
+   height: 100%;
+   border-radius: 38px;
+
+   display: flex;
+    align-items: center;
+}
+
+
+/* participants */
+
+.participants_wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.per_chat_details_wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    background-color: #fff;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.per_chat_content_details_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    /* margin-top: 5%; */
+    justify-content: space-between;
+    margin-bottom: 30%;
+}
+
+.active_chat_name {
+    height: 55px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.participant_image {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+ 
+    display: flex;
+    align-items: center;
+ }
+
+.participant_image img {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+ }
+
+.per_participant {
+    width: 100%;
+    height: 57px;
+    border-bottom: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.per_participant_nl > p {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    color: #686574;
+    font-size: 11.5pt;
+    font-weight: 900;
+}
+
+.text_three_participants {
+    height: 40px;
+    width: 100%;
+    padding: 5%;
+    background-color: #f5f4fa;
+
+    display: flex;
+    align-items: center;
+}
+
+.per_participant_left,
+.per_participant_right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.per_participant_right {
+    justify-content: flex-end;
+}
+.per_participant_right > p {
+    color: #c6c6cc;
+    font-size: 9pt;
+    padding: 0 10px;
+}
+.per_participant_right > i {
+    color: #a3a3a3;
+    font-size: 10pt;
+    padding: 0 15px;
+}
+
+.grout_info_heading2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.participant_letter {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    background-color: orange;
+    background-image: linear-gradient(#ecc282, #ad40d9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.participant_letter > span {
+    color: #fff;
+    font-family: 'gilroy-bold';
+    font-size: 20pt;
+}
+
+.wrap_left {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.active_chat_h4 {
+    padding: 0 20px;
+    font-size: 12.5pt;
+    font-weight: 900;
+}
+
+.text_three_participants {
+    font-size: 9pt;
+    color: #4b4859;
+}
+
+.text_three_participants > h6 {
+    margin-top: 10px;
+}

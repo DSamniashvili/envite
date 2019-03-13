@@ -6,6 +6,7 @@
     "email": "nina@gmail.com",
     "birthdate": "1994-12-10",
     "img": "images/nina.png",
+    "admin": "Admin",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",
@@ -50,7 +51,7 @@
     "username": "Dea",
     "email": "admin@admin.ge",
     "birthdate": "2018-12-11",
-    "img": "images/nina.png",
+    "img": "images/girl.jpg",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",
@@ -78,7 +79,7 @@
     "username": "Lora",
     "email": "Lora@lora.ge",
     "birthdate": "1994-12-10",
-    "img": "images/nina.png",
+    "img": "images/girl1.jpg",
     "shopping_bag": [{
         "itemID": "1",
         "url": "images/bag.jpg",

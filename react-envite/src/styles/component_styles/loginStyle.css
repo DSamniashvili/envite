@@ -37,13 +37,13 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
 .login_wrapper > h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 36pt;
+    font-family:'gilroy-bold';
     margin-bottom: 10px;
     color: #484456;
 }
@@ -51,13 +51,13 @@
     text-align: center;
     margin-bottom: 20px;
     color: #484456;
-    font-size: 1.1rem;
+    /* font-size: 1rem; */
 }
 
 .socials_auth_wrapper {
     display: flex;
     flex-direction: row;
-    /* width: 70%; */
+    width: 100%;
     justify-content: space-between;
     margin: 20px 0 30px 0;
 }
@@ -75,5 +75,19 @@
 }
 
 .social_image {
-    width: 130px;
+    width: 145px;
+    border-radius: 50px;
+    border: 1px solid #e7e7e9;
+    border-bottom: 2px solid #e7e7e9;
+    box-sizing: border-box;
+}
+.login_description {
+    font-size: 14pt;
+}
+
+.powered_by {
+    font-size: 13pt;
+}
+.powered_by > span {
+    font-weight: bold;
 }

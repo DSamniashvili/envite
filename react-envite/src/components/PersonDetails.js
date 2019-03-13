@@ -1,29 +1,27 @@
-import React, { Component } from 'react';
-import '../styles/person_details.css';
-
-// import ProfilePageHeading from './ProfilePageHeading';
+import React from 'react';
+import '../styles/component_styles/person_details.css';
 import BottomNavigation from './BottomNavigation';
 import PersonDetailsForm from './PersonDetailsForm';
-// import Plus from './Plus';
 
+import checkMark from '../assets/nounCheckMark5938940000001.png';
 
-export default class PersonDetails extends Component {
-    render() {
+const PersonDetails = props => {
         return (
             <div className="person_details_wrapper">
                 <button 
                     className="close_btn"
-                    onClick={this.props.showBtnWithMsgQuantity}
+                    onClick={props.showBtnWithMsgQuantity}
                 >X</button>
                 <div className="image_profile_wrapper"><img src={'/images/nina.png'} alt="User" className="image_details" /></div>
-                <PersonDetailsForm person={this.props.person}/>
+                <PersonDetailsForm person={props.person}/>
                 <BottomNavigation 
                 profile={""}
                 shapeProfile={'shape_profile'}
                 classname={"done_icon"}
-                icon={<i className="fas fa-check"></i>}
+                icon={checkMark}
                 />
             </div>
         )
-    }
 }
+
+export default PersonDetails;
