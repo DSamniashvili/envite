@@ -10,7 +10,6 @@ class App extends Component {
   }
 
   toggleModule = () => {
-    console.log('clicked');
     this.setState({
         isHidden: !this.state.isHidden
     })
@@ -33,7 +32,6 @@ renderContent() {
     return (
       <div className="App">
       {this.renderContent()}
-      
       </div>
     );
   }

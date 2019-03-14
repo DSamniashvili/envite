@@ -16,6 +16,7 @@ const PersonDetails = props => {
                 <PersonDetailsForm person={props.person}/>
                 <BottomNavigation 
                 profile={""}
+                shadow={''}
                 shapeProfile={'shape_profile'}
                 classname={"done_icon"}
                 icon={checkMark}

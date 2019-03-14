@@ -4,12 +4,6 @@ import React, { Component } from 'react';
 import ChatItem from './ChatItem';
 
 export default class ChatsWrapper extends Component {
-
-  giveBGC = () => {
-
-  }
-
-
   renderChats(){
     return this.props.chats.map((chat, index) => {
         return <ChatItem 

@@ -7,18 +7,25 @@
     "birthdate": "1994-12-10",
     "img": "images/nina.png",
     "admin": "Admin",
-    "shopping_bag": [{
+    "shopping": [{
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }, {
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
+    },
+    {
+        "itemID": "1",
+        "url": "images/bag.jpg",
+        "name": "Very Cool yellow bag for woman",
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }],
     "chats": [{
         "name": "Asos Team",
@@ -52,24 +59,24 @@
     "email": "admin@admin.ge",
     "birthdate": "2018-12-11",
     "img": "images/girl.jpg",
-    "shopping_bag": [{
+    "shopping": [{
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }, {
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }, {
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }],
     "chatName": "It's all  about the bag"
 }, {
@@ -80,17 +87,17 @@
     "email": "Lora@lora.ge",
     "birthdate": "1994-12-10",
     "img": "images/girl1.jpg",
-    "shopping_bag": [{
+    "shopping": [{
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }, {
         "itemID": "1",
         "url": "images/bag.jpg",
         "name": "Very Cool yellow bag for woman",
-        "price": "$49.00",
-        "discount": "$19.90"
+        "oldP": "$49.00",
+        "currentP": "$19.90"
     }]
 }]

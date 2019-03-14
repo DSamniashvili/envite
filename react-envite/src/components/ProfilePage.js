@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import '../styles/component_styles/ProfileStyle.css';
-
 
 import UpperStick from './UpperStick';
 import ProfilePageHeading from './ProfilePageHeading';
@@ -10,8 +8,6 @@ import NewGroupPage from './NewGroupPage';
 import PerChatContent from './PerChatContent';
 import PersonDetails from './PersonDetails';
 import ButtonC from './ButtonC';
-// import PerChatContentDetails from './PerChatContentDetails';
-
 import plus from '../assets/group2Copy.png';
 
 
@@ -27,17 +23,24 @@ class ProfilePage extends Component {
     profilePageRendered: false,
     messages: this.props.users[0].chats[0].content,
     groupDetailsOpen: false,
+
+  }
+
+  showMessagesQuantity = () => {
+    this.setState({
+      isFolledIn: !this.state.isFolledIn,
+    })
   }
 
 
   newJourney = () => {
-    console.log('plus button - new journey was clicked');
+    // console.log('plus button - new journey was clicked');
     this.setState({
       isAddingNewChat: true
     })
   }
   openChat = () => {
-    console.log('clicked - A chat is opened');
+    // console.log('clicked - A chat is opened');
     this.setState({
       isOpenPerChat: true
     })
@@ -49,7 +52,7 @@ class ProfilePage extends Component {
     })
   }
   showBtnWithMsgQuantity = () => {
-    console.log('clicked - button with message quantity shown');
+    // console.log('clicked - button with message quantity shown');
     this.setState({
       profilePageRendered: !this.state.profilePageRendered,
       isPersonDetailsSelected: !this.state.isPersonDetailsSelected
@@ -57,20 +60,15 @@ class ProfilePage extends Component {
     console.log(this.state)
   }
 
-  // openGroupDetails = () => {
-  //   console.log('clicked - Group details got opened');
-  //   this.setState({
-  //     groupDetailsOpen: true,
-  //     isOpenPerChat: false,
-  //   })
-  // }
-
-
-
 
   renderView() {
-    console.log(this.state.messages);
+    // console.log(this.state.messages);
     let person = this.state.personSelected;
+
+
+    if(this.state.isFolledIn) {
+      console.log('chakecilia');
+    }
 
     if (this.state.isAddingNewChat) {
       return <NewGroupPage />
@@ -81,6 +79,7 @@ class ProfilePage extends Component {
         currentUser={this.state.personSelected}
         usersList={this.state.usersList}
         openGroupDetails={this.openGroupDetails}
+        showMessagesQuantity={this.showMessagesQuantity}
         />
     }
     if (this.state.isPersonDetailsSelected) {
@@ -92,13 +91,12 @@ class ProfilePage extends Component {
     if (this.state.profilePageRendered) {
       return <ButtonC/>
     }
-    // if (this.state.groupDetailsOpen) {
-    //   return <PerChatContentDetails />
-    // }
-
     return (
       <div className="Profile_full_container">
-        <UpperStick toggleModule={this.props.toggleModule} className={'stickAndContent_profile'} />
+        <UpperStick 
+            toggleModule={this.props.toggleModule} 
+            className={'stickAndContent_profile'} 
+        />
           <div className="profile_content_background">
               <ProfilePageHeading
               heading={`Welcome ${person.name}.`}
@@ -111,9 +109,6 @@ class ProfilePage extends Component {
              openChat={this.openChat}
              chats={person.chats}
              />
-             {/* <div className="arrow"> */}
-               {/* <img src="../assets/fIll104.png" alt="arrow" /> */}
-             {/* </div> */}
             <div className="new_shopping_journey">
               <p>New shopping Journey!</p>
         </div>
@@ -121,6 +116,7 @@ class ProfilePage extends Component {
         <BottomNavigation 
         wrapperClass={"profile_bottom_nav"}
         shapeProfile={""}
+        shadow={"bottom_navigation_shadow"}
         profile={"profile_bottom_navigation_profile"}
         newJourney={this.newJourney}
         openPersonDetails={this.openPersonDetails} 
@@ -133,7 +129,6 @@ class ProfilePage extends Component {
 
 
   render() {
-    // console.log(this.props.users);
     return (
       this.renderView()
     )

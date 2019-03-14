@@ -5,10 +5,14 @@ import MenuBarHeader from './MenuBarHeader';
 import ParticipantsWrapper from './participants/ParticipantsWrapper';
 
 import close from '../assets/nounClose2043081000000Copy.png';
+import list from '../assets/group2Copy2.png';
 
 const PerChatContentDetails = props => (
   <React.Fragment>
-    <MenuBarHeader centerheading={"Group Info"} rightImage={close}/>
+    <MenuBarHeader 
+    leftImage={list}
+    centerheading={"Group Info"} 
+    rightImage={close}/>
    
         
 
@@ -27,6 +31,8 @@ const PerChatContentDetails = props => (
       </div>
       
       <ParticipantsWrapper 
+        shoppingBagOpen={props.shoppingBagOpen}
+        addParticipant={props.addParticipant}
         currentUser={props.currentUser}
         usersList={props.usersList}
       />

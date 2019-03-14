@@ -1,20 +1,26 @@
 import React from 'react';
 import '../styles/component_styles/MenuBar.css';
+import ThreeLinesCentered from './ThreeLinesCentered';
 
-import list from '../assets/group2Copy2.png';
 
 const MenuBarHeader = props =>  (
+    <React.Fragment>
+        <ThreeLinesCentered 
+        // showMessagesQuantity={props.showMessagesQuantity}
+        />
+    
             <div className="menubar_header_wrapper">
-                <div 
-                    className="menubar_three_lines"
-                    onClick={props.openGroupDetails}
-                >
-                    <img src={list} alt="list"/></div>
-                <div className="menubar_heading"><h3>{props.centerheading}</h3></div>
+                <div className="menubar_three_lines" onClick={props.openGroupDetails} >
+                    <img src={props.leftImage} alt=""/>
+                </div>
+                <div className="menubar_heading">
+                    <h3>{props.centerheading}</h3>
+                </div>
                 <div className="menubar_settings" > 
-                    <img src={props.rightImage} alt="icon_right"/> 
+                    <img src={props.rightImage} alt=""/> 
                 </div>
             </div>
+        </React.Fragment>
         )
 
 export default MenuBarHeader;

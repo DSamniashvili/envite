@@ -16,11 +16,14 @@
 }
 
 .menubar_header_wrapper * {
-
     color: #fff;
 }
 
 .menubar_heading > h3 {
     font-family: 'gilroy-medium';
     font-size: 11pt;
+}
+.menubar_heading > h4 {
+    font-family: 'gilroy-medium';
+    font-size: 9pt;
 }

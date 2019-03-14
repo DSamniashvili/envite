@@ -2,9 +2,12 @@ import React from 'react';
 
 
 const PerParticipant = props =>  {
-    console.log(props)
+    // console.log(props.participant)
   return (
-    <div className="per_participant">
+    <div 
+        className="per_participant"
+        onClick={props.shoppingBagOpen}
+        >
         <div className="per_participant_left">
             <div className="participant_image">
                 <img src={props.participant.img} alt="user_image" />

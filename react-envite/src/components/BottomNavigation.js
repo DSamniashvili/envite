@@ -8,10 +8,10 @@ import clock from '../assets/nounHistory576599000000.png';
 import setting from '../assets/nounSettings1187813000000.png';
 
  const BottomNavigation = props => {
-
     return (
       <div className={`profile_bottom_navigation ${props.profile}`}>
-        <img src={'/images/bottom_navigation.png'} alt="bottom_navogaton_img" className="profile_bottom_navigation_image" />
+      <div className={`${props.shadow}`}></div>
+      <div className="bottom_navigation_image"></div>
         <Plus
           newJourney={props.newJourney}
           icon={props.icon}

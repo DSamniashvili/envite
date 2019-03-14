@@ -14,7 +14,8 @@
 
 .profile_chat_item {
     width: 375px;
-    height: 75px;
+    /* height: 75px; */
+    padding: 3.5%;
     border: 2px solid #e6e3f1;
     border-radius: 5px;
     background-color: #f5f4fa;
@@ -32,10 +33,9 @@
 }
 
 .profile_chat_heading {
-    margin-bottom: 15px;
-    margin-top: 20px;
-
-    font-size: 1rem;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    /* font-size: 1rem; */
     font-weight: bold;
     color: #454253;
 }
