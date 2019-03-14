@@ -1,11 +1,15 @@
+//It's all about the bag - first page
+
 import React, { Component } from 'react';
 import '../styles/component_styles/per_chat_content.css'
 
 import MenuBarHeader from './MenuBarHeader';
 import WriteMessage from './WriteMessage';
 import Messages from './Messages';
-import EnviteYourFriends from './EnviteYourFriends';
+import ButtonWithMessages from './ButtonWithMessages';
+
 import PerChatContentDetails from './PerChatContentDetails';
+import EnviteYourFriends from './EnviteYourFriends';
 import ShoppingBag from './shopping/ShoppingBag';
 
 
@@ -15,12 +19,19 @@ import list from '../assets/group2Copy2.png';
 
 export default class PerChatContent extends Component {
 
-  state={
+  state = {
     isDetailsOpen: false,
     isAddingParticipant: false,
     chatName: "It's all about the bag",
     isShoppingBagOpen: false,
-    ownerOftheShoppingBag: null,
+    showButtonWithMessageQ: false
+  }
+
+  showMessagesQuantity = () => {
+    this.setState({
+      showButtonWithMessageQ: !this.state.showButtonWithMessageQ
+    })
+    console.log('show Message quantity')
   }
 
   openGroupDetails = () => {
@@ -36,7 +47,7 @@ export default class PerChatContent extends Component {
     })
   }
 
-  shoppingBagOpen = (user) => {
+  shoppingBagOpen = () => {
     this.setState({
       isShoppingBagOpen: true,
       isAddingParticipant: false,
@@ -46,59 +57,66 @@ export default class PerChatContent extends Component {
 
   renderContent() {
     const { chatName } = this.state;
-    if(this.state.isDetailsOpen) {
+
+    if (this.state.showButtonWithMessageQ) {
+      return <ButtonWithMessages
+        showMessagesQuantity={this.showMessagesQuantity}
+        chatsQuantity={"chats_quantity"}
+        span={'9'}
+      />
+    }
+
+    if (this.state.isDetailsOpen) {
       return (
-        <div className="per_chat_details_wrapper">
-          <PerChatContentDetails 
+        <PerChatContentDetails
           shoppingBagOpen={this.shoppingBagOpen}
           addParticipant={this.addParticipant}
           chatName={chatName}
           currentUser={this.props.currentUser}
           usersList={this.props.usersList}
-          />
+          showMessagesQuantity={this.showMessagesQuantity}
+        />
+      )
+    }
+
+    if (this.state.isAddingParticipant) {
+      return <EnviteYourFriends
+        showMessagesQuantity={this.showMessagesQuantity}
+      />
+    }
+
+    if (this.state.isShoppingBagOpen) {
+      return <ShoppingBag
+        currentUser={this.props.currentUser}
+      />
+    }
+
+    return (
+      <div className="per_chat_content_wrapper">
+        <MenuBarHeader
+          leftImage={list}
+          centerheading={chatName}
+          openGroupDetails={this.openGroupDetails}
+          rightImage={settings}
+          showMessagesQuantity={this.showMessagesQuantity}
+        />
+        <Messages
+          messages={this.props.messages}
+          currentUser={this.props.currentUser}
+          usersList={this.props.usersList}
+        />
+        <WriteMessage />
       </div>
-      )
-    }
+    )
 
-    if(this.state.isAddingParticipant){
-      return <EnviteYourFriends 
-      />
-    }
-
-    if(this.state.isShoppingBagOpen){
-      return <ShoppingBag 
-      currentUser={this.props.currentUser}
-      />
-    }
-
-
-    else {
-      return (
-        <div className="per_chat_content_wrapper">
-          <MenuBarHeader 
-            leftImage={list}
-            centerheading = {chatName} 
-            openGroupDetails={this.openGroupDetails} 
-            rightImage = {settings}
-            // showMessagesQuantity={this.props.showMessagesQuantity}
-          />
-            <Messages 
-              messages={this.props.messages}
-              currentUser={this.props.currentUser}
-              usersList={this.props.usersList}
-            />
-            <WriteMessage />
-        </div>
-      )
-    }
   }
 
 
- render() {
-  return (
-    this.renderContent()
-  )
- }
+  render() {
+    return (
+      this.renderContent()
+    )
+  }
 }
 
 

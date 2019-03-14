@@ -1,13 +1,10 @@
 import React from 'react';
 import logo from '../assets/envite_logo.png';
 
-
-const ButtonC = (props) => {
+const ButtonWithMessages = (props) => {
     return (
         <div className="btn_wrapper">
-            <p>{props.heading}</p>
-
-            <button className="btn" onClick={props.onBtnPress} >
+            <button className="btn" onClick={props.showMessagesQuantity} >
                 <img src={logo} alt="envite_logo" className={`image_login ${props.eBtnSize}`} />
             </button>
             <div className={`${props.chatsQuantity}`}><span>{props.span}</span></div>
@@ -15,5 +12,4 @@ const ButtonC = (props) => {
     )
 }
 
-export default ButtonC;
-
+export default ButtonWithMessages;
