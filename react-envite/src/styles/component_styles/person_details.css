@@ -100,3 +100,19 @@
     right: 35px;
     color: #d4d1f2;
 }
+
+
+@media only screen and (max-width: 375px) {
+    .person_details_form_wrapper {
+        margin-bottom: 12%;
+    }
+    .form_item {
+        margin-bottom: 0;
+    }
+    .image_details {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+  }
+

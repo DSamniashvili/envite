@@ -91,3 +91,11 @@
 .powered_by > span {
     font-weight: bold;
 }
+
+
+
+@media only screen and (max-width: 320px) {
+    .social_image {
+        width: 120px;
+    }    
+  }

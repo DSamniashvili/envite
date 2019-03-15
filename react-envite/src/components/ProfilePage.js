@@ -5,13 +5,15 @@ import ProfilePageHeading from './ProfilePageHeading';
 import ChatsWrapper from './chats/ChatsWrapper';
 import BottomNavigation from './BottomNavigation';
 import ButtonC from './ButtonC';
-import plus from '../assets/group2Copy.png';
+
 
 import NewGroupPage from './NewGroupPage';
 import PerChatContent from './PerChatContent';
 import PersonDetails from './PersonDetails';
+import ButtonWithMessages from './ButtonWithMessages';
 
 
+import plus from '../assets/group2Copy.png';
 import { connect } from 'react-redux';
 
 class ProfilePage extends Component {
@@ -24,10 +26,20 @@ class ProfilePage extends Component {
     profilePageRendered: false,
     messages: this.props.users[0].chats[0].content,
     groupDetailsOpen: false,
+    showButtonWithMessageQ: false
   }
+
+
+  showMessagesQuantity = () => {
+    this.setState({
+      showButtonWithMessageQ: !this.state.showButtonWithMessageQ
+    })
+    console.log('show Message quantity')
+  }
+
   newJourney = () => {
     this.setState({
-      isAddingNewChat: true
+      isAddingNewChat: !this.state.isAddingNewChat
     })
   }
   openChat = () => {
@@ -46,12 +58,21 @@ class ProfilePage extends Component {
   renderView() {
     let person = this.state.personSelected;
 
-    if (this.state.chakecili) {
-      return <p>chakecili</p>
+    if (this.state.showButtonWithMessageQ) {
+      return <ButtonWithMessages
+        showMessagesQuantity={this.showMessagesQuantity}
+        chatsQuantity={"chats_quantity"}
+        span={this.state.messages.length}
+        messages={this.state.messages}
+        topMessage={this.state.messages[this.state.messages.length-2]}
+        bottomMessage={this.state.messages[this.state.messages.length-1]}
+      />
     }
 
     if (this.state.isAddingNewChat) {
-      return <NewGroupPage />
+      return <NewGroupPage 
+      showMessagesQuantity={this.showMessagesQuantity}
+      />
     }
     if (this.state.isOpenPerChat) {
       return <PerChatContent
@@ -59,6 +80,7 @@ class ProfilePage extends Component {
         currentUser={this.state.personSelected}
         usersList={this.state.usersList}
         openGroupDetails={this.openGroupDetails}
+        showMessagesQuantity={this.showMessagesQuantity}
       />
     }
     if (this.state.isPersonDetailsSelected) {

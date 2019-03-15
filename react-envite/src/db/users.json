@@ -41,6 +41,41 @@
             "lastname": "Lorens",   
             "textContent": "Hi dear, good you came!!!",
             "img": "images/nina.png"
+        },
+        {
+            "id": "3",
+            "name": "Dea",
+            "lastname": "Samniashvili",   
+            "textContent": "Nice one, sis, I think I'd take this one though...",
+            "img": "images/girl2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Mariam",
+            "lastname": "Shamatava",   
+            "textContent": "Hey, How are you?",
+            "img": "images/girl2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Dea",
+            "lastname": "Samniashvili",   
+            "textContent": "Nice one, sis, I think I'd take this one though...",
+            "img": "images/girl2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Dea",
+            "lastname": "Samniashvili",   
+            "textContent": "Nice one, sis, I think I'd take this one though...",
+            "img": "images/girl2.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Elene",
+            "lastname": "Qush",   
+            "textContent": "❤️❤️❤️",
+            "img": "images/girl3.jpg"
         }
     ],
         "members": "Nina, Emma, Milla, Eimy"

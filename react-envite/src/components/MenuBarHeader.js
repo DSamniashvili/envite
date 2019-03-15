@@ -18,7 +18,7 @@ const MenuBarHeader = props => (
             <div className="menubar_heading">
                 <h3>{props.centerheading}</h3>
             </div>
-            <div className="menubar_settings" >
+            <div className="menubar_settings menubar_close" onClick={props.showChatFirstPage} >
                 <img src={props.rightImage} alt="" />
             </div>
         </div>

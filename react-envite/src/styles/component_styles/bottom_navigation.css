@@ -26,7 +26,8 @@
     height: 90px;
     width: 100%;
     position: absolute;
-    top: -20px;
+    /* top: -20px; */
+    top: -25%;
 }
 
 .profile_bottom_navigation_profile {
@@ -164,3 +165,5 @@
     position: absolute;
     top: -80px;
 }
+
+

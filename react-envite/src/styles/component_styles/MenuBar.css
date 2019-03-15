@@ -27,3 +27,11 @@
     font-family: 'gilroy-medium';
     font-size: 9pt;
 }
+
+
+@media only screen and (max-width: 320px) {
+    .menubar_header_wrapper {
+        height: 45px;
+    }
+  }
+

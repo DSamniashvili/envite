@@ -62,16 +62,64 @@ button, input[type="submit"], input[type="reset"] {
     height: 100vh;
 }
 
-.btn_wrapper {
-  display: flex;
-  align-self: flex-end;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 5%;
-  margin-right: 5%;
+.btn_wrapper_messages {
+     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    position: relative;
 
-  position: relative;
+    height: 150px;
+}
+
+.unread_messages_wrapper {
+    width: 70%;
+}
+
+.message_btn_message {
+    margin: 5%;
+    background-color: #e6e6e6;
+    color: #55535e;
+    border-radius: 5px;
+    padding: 4%;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message_btn_message > img {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+}
+
+.message_btn_message > p {
+    padding-left: 10px;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.semi_transparent {
+    background: linear-gradient( to top, #fff,rgba(255, 255, 255, 0.3))
+}
+
+.btn_wrapper {
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+
+    position: relative;
 }
 
 .btn_wrapper p {

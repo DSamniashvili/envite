@@ -19,6 +19,7 @@ const PerChatContentDetails = props => (
       centerheading={"Group Info"}
       rightImage={close}
       showMessagesQuantity={props.showMessagesQuantity}
+      showChatFirstPage={props.showChatFirstPage}
     />
 
     <div className="per_chat_content_details_wrapper">

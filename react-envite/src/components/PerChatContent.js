@@ -6,7 +6,7 @@ import '../styles/component_styles/per_chat_content.css'
 import MenuBarHeader from './MenuBarHeader';
 import WriteMessage from './WriteMessage';
 import Messages from './Messages';
-import ButtonWithMessages from './ButtonWithMessages';
+// import ButtonWithMessages from './ButtonWithMessages';
 
 import PerChatContentDetails from './PerChatContentDetails';
 import EnviteYourFriends from './EnviteYourFriends';
@@ -16,22 +16,16 @@ import ShoppingBag from './shopping/ShoppingBag';
 import settings from '../assets/nounSetting1050013000000.png';
 import list from '../assets/group2Copy2.png';
 
+// import { connect } from 'react-redux';
 
-export default class PerChatContent extends Component {
+
+class PerChatContent extends Component {
 
   state = {
     isDetailsOpen: false,
     isAddingParticipant: false,
     chatName: "It's all about the bag",
     isShoppingBagOpen: false,
-    showButtonWithMessageQ: false
-  }
-
-  showMessagesQuantity = () => {
-    this.setState({
-      showButtonWithMessageQ: !this.state.showButtonWithMessageQ
-    })
-    console.log('show Message quantity')
   }
 
   openGroupDetails = () => {
@@ -55,16 +49,17 @@ export default class PerChatContent extends Component {
     })
   }
 
+  showChatFirstPage = () => {
+    this.setState({
+    isDetailsOpen: false,
+    isAddingParticipant: false,
+    chatName: "It's all about the bag",
+    isShoppingBagOpen: false,
+    })
+  }
+
   renderContent() {
     const { chatName } = this.state;
-
-    if (this.state.showButtonWithMessageQ) {
-      return <ButtonWithMessages
-        showMessagesQuantity={this.showMessagesQuantity}
-        chatsQuantity={"chats_quantity"}
-        span={'9'}
-      />
-    }
 
     if (this.state.isDetailsOpen) {
       return (
@@ -74,20 +69,22 @@ export default class PerChatContent extends Component {
           chatName={chatName}
           currentUser={this.props.currentUser}
           usersList={this.props.usersList}
-          showMessagesQuantity={this.showMessagesQuantity}
+          showMessagesQuantity={this.props.showMessagesQuantity}
+          showChatFirstPage={this.showChatFirstPage}
         />
       )
     }
 
     if (this.state.isAddingParticipant) {
       return <EnviteYourFriends
-        showMessagesQuantity={this.showMessagesQuantity}
+        showMessagesQuantity={this.props.showMessagesQuantity}
       />
     }
 
     if (this.state.isShoppingBagOpen) {
       return <ShoppingBag
         currentUser={this.props.currentUser}
+        showMessagesQuantity={this.props.showMessagesQuantity}
       />
     }
 
@@ -98,7 +95,7 @@ export default class PerChatContent extends Component {
           centerheading={chatName}
           openGroupDetails={this.openGroupDetails}
           rightImage={settings}
-          showMessagesQuantity={this.showMessagesQuantity}
+          showMessagesQuantity={this.props.showMessagesQuantity}
         />
         <Messages
           messages={this.props.messages}
@@ -118,5 +115,8 @@ export default class PerChatContent extends Component {
     )
   }
 }
+
+export default PerChatContent;
+
 
 

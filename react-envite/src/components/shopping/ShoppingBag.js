@@ -16,7 +16,6 @@ export default class ShoppingBag extends Component {
   }
 
   render() {
-    // console.log(this.props.currentUser)
     return (
       <div className="shopping_bag_wrapper">
         <MenuBarHeader

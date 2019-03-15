@@ -8,6 +8,7 @@
     width: 100%;
     color: #4c495a;
     background-color: #f5f4fa;
+    position: relative;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
