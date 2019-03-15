@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import './styles/style.css';
 
 import ButtonC from './components/ButtonC';
@@ -10,27 +12,51 @@ class App extends Component {
   }
 
   toggleModule = () => {
-    this.setState({
-      isHidden: !this.state.isHidden
-    })
+    if (this.state.isHidden) {
+      return this.setState({
+        isHidden: !this.state.isHidden,
+      })
+    }
+
+    setTimeout(() => {
+      this.setState({
+        isHidden: !this.state.isHidden,
+      })
+    }, 1000);
   }
 
   renderContent() {
     if (!this.state.isHidden) {
-      return <Login toggleModule={this.toggleModule} />
+      return <Login isHidden = {
+        this.state.isHidden
+      }
+      toggleModule = {
+        this.toggleModule
+      }
+      />
     }
     return <ButtonC
-      chatsQuantity={""}
-      span={''}
-      heading={"Shop with friends"}
-      onBtnPress={this.toggleModule} />
+    chatsQuantity = {
+      ""
+    }
+    span = {
+      ''
+    }
+    heading = {
+      "Shop with friends"
+    }
+    onBtnPress = {
+      this.toggleModule
+    }
+    />
   }
 
   render() {
-    return (
-      <div className="App">
-        {this.renderContent()}
-      </div>
+    return ( <
+      div className = "App" > {
+        this.renderContent()
+      } <
+      /div>
     );
   }
 }

@@ -24,7 +24,7 @@
     width: 90px;
     height: 90px;
 }
- 
+
 .login_image_wrapper {
     margin: 20px 0;
     margin-top: 30px;
@@ -41,13 +41,14 @@
     height: 100%;
 }
 
-.login_wrapper > h1 {
+.login_wrapper>h1 {
     font-size: 28pt;
-    font-family:'gilroy-bold';
+    font-family: 'gilroy-bold';
     margin-bottom: 10px;
     color: #484456;
 }
-.login_wrapper > p {
+
+.login_wrapper>p {
     text-align: center;
     margin-bottom: 20px;
     color: #484456;
@@ -69,9 +70,9 @@
     background-color: antiquewhite;
 }
 
-.social_auth > img {
+.social_auth>img {
     border: 2px solid #ccc;
-    
+
 }
 
 .social_image {
@@ -81,6 +82,7 @@
     border-bottom: 2px solid #e7e7e9;
     box-sizing: border-box;
 }
+
 .login_description {
     font-size: 1rem;
 }
@@ -88,7 +90,8 @@
 .powered_by {
     font-size: 1rem;
 }
-.powered_by > span {
+
+.powered_by>span {
     font-weight: bold;
 }
 
@@ -97,5 +100,46 @@
 @media only screen and (max-width: 320px) {
     .social_image {
         width: 120px;
-    }    
-  }
+    }
+}
+
+
+
+
+
+
+
+.animation {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+.slideUp {
+    animation-name: 'slideUp';
+}
+
+.slideDown {
+    animation-name: 'slideDown';
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
