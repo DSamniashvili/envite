@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../assets/envite_logo.png';
 
 const ButtonWithMessages = props => {
-    console.log(props.messages)
     return (
         <div className="btn_wrapper_messages">
             <div className="unread_messages_wrapper">

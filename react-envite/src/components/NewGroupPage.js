@@ -2,10 +2,6 @@ import React from 'react';
 import MenuBarHeader from './MenuBarHeader';
 import WriteMessage from './WriteMessage';
 import Socials from './Socials';
-// import MenuBarHeader from './MenuBarHeader';
-
-// import '../styles/component_styles/new_group.css';
-
 
 const NewGroupPage = props => {
     return (

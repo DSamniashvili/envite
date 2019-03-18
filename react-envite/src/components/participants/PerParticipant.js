@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const PerParticipant = props =>  {
-    // console.log(props.participant)
   return (
     <div 
         className="per_participant"

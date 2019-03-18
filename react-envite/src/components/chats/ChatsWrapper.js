@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../styles/component_styles/chats_in_profile.css';
 
 import ChatItem from './ChatItem';
 

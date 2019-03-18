@@ -1,12 +1,7 @@
-// Group Info Page
-
 import React from 'react';
-// import '../styles/component_styles/per_chat_content.css';
 
-// imgs
 import close from '../assets/nounClose2043081000000Copy.png';
 import list from '../assets/group2Copy2.png';
-
 
 import MenuBarHeader from './MenuBarHeader';
 import ParticipantsWrapper from './participants/ParticipantsWrapper';

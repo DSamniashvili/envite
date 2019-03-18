@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import UpperStick from './UpperStick';
 import ProfilePage from './ProfilePage';
 
-// import '../styles/component_styles/loginStyle.css';
 
 export default class Login extends Component {
     state= {
         isLoggedIn: false,
         slideAnimation: 'slideUp',
-        // fadeAnimation: 'fadeIn'
     }
 
     authenticate = () => {
@@ -20,7 +18,6 @@ export default class Login extends Component {
     animate = () => {
         this.setState({
             slideAnimation: 'slideDown',
-            // fadeAnimation: 'fadeOut'
         })
     }
     renderView() {

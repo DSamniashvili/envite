@@ -1,12 +1,8 @@
-//It's all about the bag - first page
-
 import React, { Component } from 'react';
-// import '../styles/component_styles/per_chat_content.css'
 
 import MenuBarHeader from './MenuBarHeader';
 import WriteMessage from './WriteMessage';
 import Messages from './Messages';
-// import ButtonWithMessages from './ButtonWithMessages';
 
 import PerChatContentDetails from './PerChatContentDetails';
 import EnviteYourFriends from './EnviteYourFriends';
@@ -68,7 +64,6 @@ class PerChatContent extends Component {
 
 
   renderContent() {
-    console.log(this.props)
     const { chatName } = this.state;
 
     if (this.state.isDetailsOpen) {
@@ -81,7 +76,6 @@ class PerChatContent extends Component {
           chatName={chatName}
           currentUser={this.props.currentUser}
           usersList={this.props.usersList}
-          // showMessagesQuantity={this.props.showMessagesQuantity}
           showMessagesQuantity={() => {
             this.props.showMessagesQuantity();
             this.setState({fadeAnimation: 'slideDown'});
@@ -93,8 +87,6 @@ class PerChatContent extends Component {
 
     if (this.state.isAddingParticipant) {
       return <EnviteYourFriends
-        // showMessagesQuantity={this.props.showMessagesQuantity}
-        // animate={this.animate}
         fadeAnimation={this.state.fadeAnimation}
         showMessagesQuantity={() => {
           this.props.showMessagesQuantity();
@@ -108,7 +100,6 @@ class PerChatContent extends Component {
         fadeAnimation={this.state.fadeAnimation}
         animate={this.animate}
         currentUser={this.props.currentUser}
-        // showMessagesQuantity={this.props.showMessagesQuantity}
         showMessagesQuantity={() => {
           this.props.showMessagesQuantity();
           this.setState({fadeAnimation: 'slideDown'});

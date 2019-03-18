@@ -4,7 +4,6 @@ const ThreeLinesCentered = props => {
   return (
     <div
       className="lines_wrapper"
-      // onClick={() => {props.showMessagesQuantity(); props.animate()}}
       onClick={() => {props.showMessagesQuantity(); }}
     >
       <div className="per_line"></div>

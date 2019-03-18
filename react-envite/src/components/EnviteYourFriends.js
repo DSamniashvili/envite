@@ -5,7 +5,6 @@ import SocialItemEnvite from './SocialItemEnvite';
 import arrowWhite from '../assets/arrowRightWhite.png';
 
 const EnviteYourFriends = props => {
-  console.log(props)
   return (
     <div className={`wrapper_envite_friends animation1 ${props.fadeAnimation}`}>
       <MenuBarHeader

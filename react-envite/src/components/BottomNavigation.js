@@ -1,6 +1,6 @@
 import React from 'react';
 import Plus from './Plus';
-// import '../styles/component_styles/bottom_navigation.css';
+import '../styles/component_styles/bottom_navigation.css';
 
 import user from '../assets/nounUser11228000000001.png';
 import star from '../assets/nounStar2097830000000.png';

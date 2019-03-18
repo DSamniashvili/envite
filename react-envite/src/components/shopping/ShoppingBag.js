@@ -19,7 +19,6 @@ export default class ShoppingBag extends Component {
     return (
       <div className={`shopping_bag_wrapper animation1 ${this.props.fadeAnimation}`}>
         <MenuBarHeader
-          // animate={this.props.animate}
           showMessagesQuantity={this.props.showMessagesQuantity}
         />
 

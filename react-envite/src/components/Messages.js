@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-// import '../styles/component_styles/per_chat_content.css'
 
 export default class Messages extends Component {
   checkIfUser = () => {
     const { messages, currentUser } = this.props;
 
     return messages.map((message, index) => {
-      console.log(message.textContent)
     if(currentUser.name !== message.name) {
         return (
           <div className="message_msg message_guest" key={index}>

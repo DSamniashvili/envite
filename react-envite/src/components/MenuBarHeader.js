@@ -1,7 +1,4 @@
 import React from 'react';
-// import '../styles/component_styles/MenuBar.css';
-
-
 import ThreeLinesCentered from './ThreeLinesCentered';
 
 

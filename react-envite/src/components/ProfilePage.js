@@ -119,7 +119,6 @@ class ProfilePage extends Component {
         this.setState({fadeAnimation: 'slideDown'})
         this.showMessagesQuantity();
       }}
-        // showMessagesQuantity={this.showMessagesQuantity}
       />
     }
     if (this.state.profilePageRendered) {
