@@ -8,6 +8,7 @@ const EnviteYourFriends = props => {
   return (
     <div className="wrapper_envite_friends">
       <MenuBarHeader
+        // animate={props.animate}
         centerheading={'eNvite your friends'}
         rightImage={arrowWhite}
         showMessagesQuantity={props.showMessagesQuantity}

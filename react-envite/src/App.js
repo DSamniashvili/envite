@@ -22,7 +22,7 @@ class App extends Component {
       this.setState({
         isHidden: !this.state.isHidden,
       })
-    }, 1000);
+    }, 500);
   }
 
   renderContent() {
@@ -52,11 +52,11 @@ class App extends Component {
   }
 
   render() {
-    return ( <
-      div className = "App" > {
+    return ( 
+    <div className = "App" > {
         this.renderContent()
-      } <
-      /div>
+      } 
+      </div>
     );
   }
 }

@@ -10,7 +10,7 @@ const PersonDetails = props => {
             <div className="person_details_wrapper">
                 <button 
                     className="close_btn"
-                    onClick={props.showBtnWithMsgQuantity}
+                    onClick={props.showMessagesQuantity}
                 >X</button>
                 <div className="image_profile_wrapper"><img src={'/images/nina.png'} alt="User" className="image_details" /></div>
                 <PersonDetailsForm person={props.person}/>

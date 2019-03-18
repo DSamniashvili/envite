@@ -7,7 +7,8 @@ import '../styles/component_styles/loginStyle.css';
 export default class Login extends Component {
     state= {
         isLoggedIn: false,
-        slideAnimation: 'slideUp'
+        slideAnimation: 'slideUp',
+        // fadeAnimation: 'fadeIn'
     }
 
     authenticate = () => {
@@ -18,12 +19,17 @@ export default class Login extends Component {
 
     animate = () => {
         this.setState({
-            slideAnimation: 'slideDown'
+            slideAnimation: 'slideDown',
+            // fadeAnimation: 'fadeOut'
         })
     }
     renderView() {
         if(this.state.isLoggedIn){
-            return <ProfilePage toggleModule={this.props.toggleModule}/>
+            return <ProfilePage 
+                animate={this.animate}
+                toggleModule={this.props.toggleModule}
+                slideAnimation={this.state.slideAnimation}
+            />
         }
         return (
             <div className={`login_container animation ${this.state.slideAnimation}`}>

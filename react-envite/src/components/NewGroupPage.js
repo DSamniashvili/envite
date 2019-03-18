@@ -9,7 +9,7 @@ import '../styles/component_styles/new_group.css';
 
 const NewGroupPage = props => {
     return (
-        <div className="new_group_wrapper">
+        <div className={`new_group_wrapper animation1 ${props.fadeAnimation}`}>
             <MenuBarHeader 
                 showMessagesQuantity={props.showMessagesQuantity}
                 centerheading={"New Group"}

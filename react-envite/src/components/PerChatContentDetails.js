@@ -13,8 +13,9 @@ import ParticipantsWrapper from './participants/ParticipantsWrapper';
 
 
 const PerChatContentDetails = props => (
-  <div className="per_chat_details_wrapper">
+  <div className={`per_chat_details_wrapper animation1 ${props.fadeAnimation}`}>
     <MenuBarHeader
+      animate={props.animate}
       leftImage={list}
       centerheading={"Group Info"}
       rightImage={close}

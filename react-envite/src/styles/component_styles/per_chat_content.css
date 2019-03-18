@@ -165,8 +165,8 @@
 }
 
 .per_participant_nl > p {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     margin: 0 20px;
     color: #686574;
     /* font-size: 11.5pt; */
@@ -186,7 +186,7 @@
 
 .per_participant_left,
 .per_participant_right {
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -387,10 +387,14 @@
     .active_chat_h4 {
         font-size: 0.9rem;
     }
+    .per_participant_left {
+        width: 80%;
+    }
     .per_participant_nl > p {
         font-size: 0.8rem;
-        display: inline;
+        /* display: inline; */
     }
+
     .grey_long {
         background-color: #f5f4fa;
         width: 100%;

@@ -16,8 +16,6 @@ import ShoppingBag from './shopping/ShoppingBag';
 import settings from '../assets/nounSetting1050013000000.png';
 import list from '../assets/group2Copy2.png';
 
-// import { connect } from 'react-redux';
-
 
 class PerChatContent extends Component {
 
@@ -26,13 +24,16 @@ class PerChatContent extends Component {
     isAddingParticipant: false,
     chatName: "It's all about the bag",
     isShoppingBagOpen: false,
+    fadeAnimation: 'fadeIn',
   }
 
+  
   openGroupDetails = () => {
     this.setState({
       isDetailsOpen: true,
     })
   }
+  
 
   addParticipant = () => {
     this.setState({
@@ -58,12 +59,23 @@ class PerChatContent extends Component {
     })
   }
 
+  animate = () => {
+    this.setState({
+        fadeAnimation: 'fadeOut'
+    })
+}
+
+
+
   renderContent() {
+    console.log(this.props)
     const { chatName } = this.state;
 
     if (this.state.isDetailsOpen) {
       return (
         <PerChatContentDetails
+          fadeAnimation={this.state.fadeAnimation}
+          animate={this.animate}
           shoppingBagOpen={this.shoppingBagOpen}
           addParticipant={this.addParticipant}
           chatName={chatName}
@@ -83,19 +95,24 @@ class PerChatContent extends Component {
 
     if (this.state.isShoppingBagOpen) {
       return <ShoppingBag
+        fadeAnimation={this.state.fadeAnimation}
+        animate={this.animate}
         currentUser={this.props.currentUser}
         showMessagesQuantity={this.props.showMessagesQuantity}
       />
     }
 
     return (
-      <div className="per_chat_content_wrapper">
+      <div className={`per_chat_content_wrapper animation1 ${this.state.fadeAnimation}`}>
         <MenuBarHeader
           leftImage={list}
           centerheading={chatName}
           openGroupDetails={this.openGroupDetails}
           rightImage={settings}
-          showMessagesQuantity={this.props.showMessagesQuantity}
+          showMessagesQuantity={() => {
+            this.props.showMessagesQuantity();
+            this.setState({fadeAnimation: 'slideDown'});
+          }}
         />
         <Messages
           messages={this.props.messages}

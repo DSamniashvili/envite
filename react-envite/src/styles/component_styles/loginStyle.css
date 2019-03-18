@@ -109,37 +109,5 @@
 
 
 
-.animation {
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
 
-
-.slideUp {
-    animation-name: 'slideUp';
-}
-
-.slideDown {
-    animation-name: 'slideDown';
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(100%);
-    }
-}
 

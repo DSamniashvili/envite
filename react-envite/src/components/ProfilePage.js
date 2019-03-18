@@ -26,16 +26,40 @@ class ProfilePage extends Component {
     profilePageRendered: false,
     messages: this.props.users[0].chats[0].content,
     groupDetailsOpen: false,
-    showButtonWithMessageQ: false
+    showButtonWithMessageQ: false,
+    fadeAnimation: 'fadeIn',
   }
 
 
-  showMessagesQuantity = () => {
+  showMessagesQuantity = () => { 
+    if (!this.state.showButtonWithMessageQ) 
+      return setTimeout(() => {
+          this.setState({
+            showButtonWithMessageQ: !this.state.showButtonWithMessageQ,
+            fadeAnimation: 'fadeIn',
+
+            isAddingNewChat: false,
+            isOpenPerChat: false,
+            isPersonDetailsSelected: false,
+            groupDetailsOpen: false,
+            profilePageRendered: false,
+
+          })
+        }, 500);
+
     this.setState({
-      showButtonWithMessageQ: !this.state.showButtonWithMessageQ
+      showButtonWithMessageQ: !this.state.showButtonWithMessageQ,
+      fadeAnimation: 'fadeIn',
+
+      isAddingNewChat: false,
+      isOpenPerChat: false,
+      isPersonDetailsSelected: false,
+      groupDetailsOpen: false,
+      profilePageRendered: false,
     })
-    console.log('show Message quantity')
   }
+
+
 
   newJourney = () => {
     this.setState({
@@ -43,17 +67,16 @@ class ProfilePage extends Component {
     })
   }
   openChat = () => {
-    // console.log('clicked - A chat is opened');
     this.setState({
       isOpenPerChat: true
     })
   }
   openPersonDetails = () => {
-    console.log('clicked - A person details page is open');
     this.setState({
       isPersonDetailsSelected: true,
     })
   }
+
 
   renderView() {
     let person = this.state.personSelected;
@@ -71,7 +94,12 @@ class ProfilePage extends Component {
 
     if (this.state.isAddingNewChat) {
       return <NewGroupPage 
-      showMessagesQuantity={this.showMessagesQuantity}
+      fadeAnimation={this.state.fadeAnimation}
+      showMessagesQuantity={()=> {
+        this.setState({fadeAnimation: 'slideDown'})
+        this.showMessagesQuantity();
+      }
+      }
       />
     }
     if (this.state.isOpenPerChat) {
@@ -86,15 +114,16 @@ class ProfilePage extends Component {
     if (this.state.isPersonDetailsSelected) {
       return <PersonDetails
         person={person}
-        showBtnWithMsgQuantity={this.showBtnWithMsgQuantity}
+        showMessagesQuantity={this.showMessagesQuantity}
       />
     }
     if (this.state.profilePageRendered) {
       return <ButtonC />
     }
     return (
-      <div className="Profile_full_container">
+      <div className={`Profile_full_container animation ${this.props.slideAnimation}`}>
         <UpperStick
+          animate={this.props.animate}
           toggleModule={this.props.toggleModule}
           className={'stickAndContent_profile'}
         />

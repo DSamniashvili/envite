@@ -38,7 +38,7 @@ html {
 
 body {
     background-color: #ccc;
-    background-color: purple;
+    /* background-color: #fff; */
     /* background-image: linear-gradient(darkgray, lightgray); */
     background-image: url('/images/mainWebpageContent.png');
     background-size: cover;
@@ -202,4 +202,64 @@ button, input[type="submit"], input[type="reset"] {
     height: 1px;
     background-color: #fff;
     margin: 2px 0;
+}
+
+
+.animation {
+    animation-duration: 0.5s;
+    /* animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+    /* transition: all .5s ease-in-out; */
+}
+.animation1 {
+    animation: fadeIn ease-out 0.5s;
+}
+
+
+.slideUp {
+    animation-name: 'slideUp';
+}
+
+.slideDown {
+    animation-name: 'slideDown';
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+/*  */
+
+
+.fadeIn {
+    animation-name: 'fadeIn';
+}
+
+.fadeOut {
+    animation-name: 'fadeOut';
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
