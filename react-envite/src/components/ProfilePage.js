@@ -114,7 +114,12 @@ class ProfilePage extends Component {
     if (this.state.isPersonDetailsSelected) {
       return <PersonDetails
         person={person}
-        showMessagesQuantity={this.showMessagesQuantity}
+        fadeAnimation={this.state.fadeAnimation}
+        showMessagesQuantity={()=> {
+        this.setState({fadeAnimation: 'slideDown'})
+        this.showMessagesQuantity();
+      }}
+        // showMessagesQuantity={this.showMessagesQuantity}
       />
     }
     if (this.state.profilePageRendered) {

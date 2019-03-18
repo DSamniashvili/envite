@@ -1,7 +1,7 @@
 @import url("component_styles/bottom_navigation.css");
 @import url("component_styles/chats_in_profile.css");
 @import url("component_styles/loginStyle.css");
-/* @import url("component_styles/MenuBar.css"); */
+@import url("component_styles/MenuBar.css");
 @import url("component_styles/new_group.css");
 @import url("component_styles/per_chat_content.css");
 @import url("component_styles/person_details.css");
@@ -14,6 +14,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 
@@ -39,9 +42,10 @@ html {
 body {
     background-color: #ccc;
     /* background-color: #fff; */
-    /* background-image: linear-gradient(darkgray, lightgray); */
-    background-image: url('/images/mainWebpageContent.png');
-    background-size: cover;
+    /* background-image
+    : linear-gradient(darkgray, lightgray); */
+    /* background-image: url('/images/mainWebpageContent.png'); */
+    /* background-size: cover; */
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -60,6 +64,7 @@ button, input[type="submit"], input[type="reset"] {
     display: flex;
     width: 100%;
     height: 100vh;
+    /* overflow: hidden; */
 }
 
 .btn_wrapper_messages {
@@ -68,12 +73,17 @@ button, input[type="submit"], input[type="reset"] {
     flex-direction: row;
     align-self: flex-end;
     align-items: flex-end;
-    width: 100%;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    position: relative;
+    /* width: 100%; */
+    /* margin-bottom: 5%; */
+    /* margin-bottom: 5vh; */
+    /* margin-right: 5%; */
+    /* position: relative; */
 
+    width: 90%;
     height: 150px;
+    position: fixed;
+    right: 10%;
+    bottom: 10vh;
 }
 
 .unread_messages_wrapper {
@@ -116,10 +126,13 @@ button, input[type="submit"], input[type="reset"] {
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
-    margin-bottom: 5%;
-    margin-right: 5%;
+    /* margin-bottom: 10%; */
+    /* margin-bottom: 8vh; */
+    /* margin-right: 5%; */
 
-    position: relative;
+    position: fixed;
+    right: 10%;
+    bottom: 10vh;
 }
 
 .btn_wrapper p {
@@ -255,11 +268,32 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
+    from { opacity: 0.5; }
     to   { opacity: 1; }
 }
 
 @keyframes fadeOut {
     from { opacity: 1; }
-    to   { opacity: 0; }
+    to   { opacity: 0.5; }
 }
+
+
+
+@media only screen and (max-height: 667px) {
+
+    .btn_wrapper,
+    .btn_wrapper_messages {
+        bottom: 14vh;
+    }
+}
+
+@media only screen and (max-height: 568px) {
+    .btn_wrapper,
+    .btn_wrapper_messages {
+        bottom: 15vh;
+        overflow: hidden;
+    }
+    .new_shopping_journey {
+        display: none;
+    }
+  }

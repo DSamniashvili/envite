@@ -15,11 +15,11 @@
 .profile_chat_item {
     width: 375px;
     /* height: 75px; */
-    padding: 3.5%;
+    padding: 2.5%;
     border: 2px solid #e6e3f1;
     border-radius: 5px;
     background-color: #f5f4fa;
-    margin: 12px 0;
+    margin: 10px 0;
     width: 100%;
 }
 

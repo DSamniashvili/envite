@@ -13,6 +13,9 @@
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    position: fixed;
+    bottom: 0;
 }
 
 .image_login {
@@ -98,10 +101,16 @@
 
 
 @media only screen and (max-width: 320px) {
+
     .social_image {
         width: 120px;
     }
 }
+
+
+
+
+
 
 
 

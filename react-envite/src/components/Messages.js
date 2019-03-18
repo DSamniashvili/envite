@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/component_styles/per_chat_content.css'
+// import '../styles/component_styles/per_chat_content.css'
 
 export default class Messages extends Component {
   checkIfUser = () => {

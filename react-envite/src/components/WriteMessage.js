@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/component_styles/write_message.css';
+// import '../styles/component_styles/write_message.css';
 
 import arrow from '../assets/pathCopy.png';
 

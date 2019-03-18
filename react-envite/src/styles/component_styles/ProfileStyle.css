@@ -14,6 +14,10 @@
     align-items: center;
 
     border-radius: 10px;
+
+
+    position: fixed;
+    bottom: 0;
 }
 
 .profileHeading_wrapper {
@@ -97,10 +101,15 @@
     width: 80%;
 }
 .new_shopping_journey {
-    z-index: 3;
+    /* z-index: 3;
     width: 120px;
     margin-top: 0;
     padding-bottom: 12%;
+    padding-top: 1%; */
+    z-index: 3;
+    width: 120px;
+    margin-top: 0;
+    padding-bottom: 8%;
     padding-top: 3%;
 
 }
@@ -152,3 +161,19 @@ textarea:focus, input:focus{
         margin: 2px 0;
     }
   }
+
+
+  @media only screen and (max-height: 568px) {
+    .profile_heading_text {
+        margin-bottom: 2%;
+        padding: 0
+    }
+    
+    .profile_chats_wrapper {
+        max-height: 150px;
+        overflow-y: scroll;
+        margin-bottom: 4vh;
+    }
+  }
+
+ 

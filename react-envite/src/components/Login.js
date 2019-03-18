@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UpperStick from './UpperStick';
 import ProfilePage from './ProfilePage';
 
-import '../styles/component_styles/loginStyle.css';
+// import '../styles/component_styles/loginStyle.css';
 
 export default class Login extends Component {
     state= {

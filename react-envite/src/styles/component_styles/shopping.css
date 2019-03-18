@@ -11,10 +11,15 @@
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    position: fixed;
+    bottom: 0;
 }
 .shopping_items_wrapper {
     width: 90%;
     margin: 0 auto;
+
+    overflow-y: auto;
 }
 
 .shopping_item_wrapper {
