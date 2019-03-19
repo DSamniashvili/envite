@@ -14,9 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden; */
 }
 
 
@@ -41,12 +38,9 @@ html {
 
 body {
     background-color: #fdfcfe;
-    
+   
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    /* background-repeat: no-repeat; */
-    /* background-size: contain */
-    
+    font-weight: 400;  
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -67,9 +61,14 @@ button, input[type="submit"], input[type="reset"] {
 
     background-image: url('/images/mainWebpageContent.png');
     background-attachment: fixed;
-  background-position: center; 
-  background-size: cover;
+    background-position: center; 
+    background-size: cover;
 }
+/* .App::-webkit-scrollbar { 
+    width: 0 !important;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+} */
 
 .btn_wrapper_messages {
      display: flex;
@@ -77,17 +76,12 @@ button, input[type="submit"], input[type="reset"] {
     flex-direction: row;
     align-self: flex-end;
     align-items: flex-end;
-    /* width: 100%; */
-    /* margin-bottom: 5%; */
-    /* margin-bottom: 5vh; */
-    /* margin-right: 5%; */
-    /* position: relative; */
 
     width: 90%;
     height: 150px;
     position: fixed;
     right: 10%;
-    bottom: 10vh;
+    bottom: 8vh;
 }
 
 .unread_messages_wrapper {

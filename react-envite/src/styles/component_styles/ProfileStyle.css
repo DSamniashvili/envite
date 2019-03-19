@@ -148,7 +148,9 @@ textarea:focus, input:focus{
 @media only screen and (max-width: 375px) {
     .profile_chats_wrapper {
     max-height: 100px;
-    overflow-y: scroll; 
+    /* overflow-y: scroll;  */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     }
     .image_profile {
     width: 75px;
@@ -179,7 +181,8 @@ textarea:focus, input:focus{
     }
     .profile_chats_wrapper {
         max-height: 150px;
-        overflow-y: scroll;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
         margin-bottom: 4vh;
     }
     .image_profile_wrapper > img {

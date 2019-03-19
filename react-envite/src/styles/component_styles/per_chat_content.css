@@ -13,11 +13,23 @@
     bottom: 0;
 }
 .messages_container {
-    overflow: scroll;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
     max-height: 280px;
     background-color: #f5f4fa;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
 }
+
+.messages_container::-webkit-scrollbar { 
+    width: 0 !important;
+    /* background: transparent;  */
+} 
+
+
 .message_wrapper {
     display: flex;
     flex-direction: column;
