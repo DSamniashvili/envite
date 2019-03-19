@@ -85,6 +85,7 @@
     z-index: 1;
     background: #efefef;
     height: 90px;
+    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-radius: 30px;
     position: absolute;
@@ -102,6 +103,7 @@
     border-radius: 70px;
     border-top-width: 0;
     border-left-width: 0;
+    transform: rotate(225deg);
     -webkit-transform: rotate(225deg);
     border-bottom-width: 0;
     top: 39px;
@@ -117,6 +119,7 @@
     border-radius: 70px;
     border-top-width: 0;
     border-right-width: 0;
+    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-bottom-width: 0;
     top: -46px;
