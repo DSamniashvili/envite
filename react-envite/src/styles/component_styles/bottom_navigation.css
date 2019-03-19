@@ -21,7 +21,7 @@
 }
 
 .bottom_navigation_shadow {
-    background-color: #ccc;
+    background-color: #fdfcfe;
     background-image: linear-gradient(to bottom, #fdfcfe, #5f5f5f);    
     height: 90px;
     width: 100%;

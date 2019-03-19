@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/envite_logo.png';
+import logo from '../assets/logo.png';
 
 const ButtonWithMessages = props => {
     return (

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import UpperStick from './UpperStick';
 import ProfilePage from './ProfilePage';
 
+import logo from '../assets/logo.png';
+
+
 
 export default class Login extends Component {
     state= {
@@ -34,7 +37,7 @@ export default class Login extends Component {
                 <UpperStick animate={this.animate} toggleModule={this.props.toggleModule} className={'stickAndContent'} />
                 <div className="login_wrapper">
                     <div className="login_image_wrapper">
-                        <img src={'/images/envite_logo.png'} alt="envite_logo" className="image_login e_btn_login"/>
+                        <img src={logo} alt="envite_logo" className="image_login e_btn_login"/>
                     </div>        
                     <h1>Hello.</h1>
                     <p className="login_description">Note that the development build is not optimized.
