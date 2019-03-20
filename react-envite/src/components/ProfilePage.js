@@ -14,6 +14,7 @@ import ButtonWithMessages from './ButtonWithMessages';
 
 
 import plus from '../assets/group2Copy.png';
+import fIll from '../assets/fIll104.png';
 import { connect } from 'react-redux';
 
 class ProfilePage extends Component {
@@ -144,6 +145,7 @@ class ProfilePage extends Component {
             chats={person.chats}
           />
           <div className="new_shopping_journey">
+          <img src={fIll} alt="arrow"/>
             <p>New shopping Journey!</p>
           </div>
         </div>

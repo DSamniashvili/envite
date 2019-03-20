@@ -107,13 +107,18 @@
     margin-top: 0;
     padding-bottom: 12%;
     padding-top: 1%; */
+    display: flex;
     z-index: 3;
     width: 120px;
     margin-top: 0;
     padding-bottom: 8%;
     padding-top: 3%;
-
 }
+.new_shopping_journey > img {
+    position: absolute;
+    margin-top: 10px;
+}
+
 .new_shopping_journey > p {
     color: #8f8f8f;
     text-align: center;
