@@ -292,19 +292,16 @@
 }
 
 .participant_action_text {
-
     margin: 0 20px;
-    font-size: 11.5pt;
-    /* font-weight: 900; */
+    font-size: 0.9rem;
 }
 
 .participant_action_icon_addIcon {
     background-color: #eae8f2;
-    
-
 }
 .participant_action_icon_deleteIcon {
     background-color: #fc1243;
+    
 }
 
 .participant_action_text_addIcon {
@@ -312,6 +309,7 @@
 }
 .participant_action_text_deleteIcon {
     color: #fc1344;
+    font-weight: 900;
 }
 .grey_background {
     background-color: #f5f4fa;

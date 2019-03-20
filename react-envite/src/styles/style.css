@@ -81,7 +81,8 @@ button, input[type="submit"], input[type="reset"] {
     height: 150px;
     position: fixed;
     right: 10%;
-    bottom: 8vh;
+    /* bottom: 8vh; */
+    bottom: 6vh;
 }
 
 .unread_messages_wrapper {
@@ -124,13 +125,10 @@ button, input[type="submit"], input[type="reset"] {
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
-    /* margin-bottom: 10%; */
-    /* margin-bottom: 8vh; */
-    /* margin-right: 5%; */
 
     position: fixed;
     right: 10%;
-    bottom: 10vh;
+    bottom: 6vh;
 }
 
 .btn_wrapper p {

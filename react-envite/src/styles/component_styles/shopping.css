@@ -30,7 +30,7 @@
     width: 100%;
 
    align-items: center;
-   padding: 18px 0;
+   padding: 20px 0;
    border-bottom: 1px solid #f9f8fc;
    color: #464254;
 }
@@ -40,10 +40,10 @@
 
 .shopping_item_image > img {
     width: 60px;
-    height: 60px;
+    height: 55px;
 }
 .shopping_item_name {
-    width: 40%;
+    width: 38%;
 }
 
 .shopping_item_name > p {
