@@ -87,14 +87,17 @@ button, input[type="submit"], input[type="reset"] {
 
 .unread_messages_wrapper {
     width: 70%;
+    margin-left: 1vh;
 }
 
 .message_btn_message {
-    margin: 5%;
+    /* margin: 5%; */
+    margin: 0.9vh;
     background-color: #e6e6e6;
     color: #55535e;
     border-radius: 5px;
-    padding: 4%;
+    /* padding: 4%; */
+    padding: 0.8vh;
     width: fit-content;
 
     display: flex;

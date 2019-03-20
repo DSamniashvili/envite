@@ -106,8 +106,8 @@
     z-index: 3;
     width: 120px;
     margin-top: 0;
-    padding-bottom: 8%;
-    padding-top: 3%;
+    padding-bottom: 3vh;
+    padding-top: 0.5vh;
 }
 .new_shopping_journey > img {
     position: absolute;
