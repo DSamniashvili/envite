@@ -144,11 +144,12 @@
     height: 55px;
     background-color: purple;
     background-image: linear-gradient(to right, #5e68d5 , #c790df);
-    box-shadow: 0px 20px 60px #a6a2de;
+    /* box-shadow: 0px 20px 60px #a6a2de; */
+    box-shadow: -1px 15px 20px #a6a2de;
     border-radius: 50px;
     position: absolute;
     z-index: 5;
-    top: -15px;
+    top: -12px;
 
     display: flex;
     justify-content: center;
